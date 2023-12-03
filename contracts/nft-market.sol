@@ -125,4 +125,21 @@ contract Market {
 
         return tempUint;
     }
+
+    function getOrderLength() external view returns (uint256) {
+        return orders.length;
+    }
+
+    function getAllNFTs() external view returns (Order[] memory) {
+        return orders;
+    }
+
+    function getMyNFTs() external view returns (Order[] memory) {
+        uint256 length = orders.length;
+        Order[] memory _orders = new Order[](length);
+        for (uint256 i = 0; i < length; i++) {
+            _orders[i] = orders[i];
+        }
+        return _orders;
+    }
 }

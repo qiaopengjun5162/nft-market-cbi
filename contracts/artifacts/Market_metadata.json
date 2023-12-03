@@ -198,6 +198,79 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getAllNFTs",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "seller",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Market.Order[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMyNFTs",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "seller",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Market.Order[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOrderLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -401,11 +474,11 @@
 			]
 		},
 		"contracts/nft-market.sol": {
-			"keccak256": "0xe29473528c3cdc378311327dbb7cd61b46cb0da5b5b22b1dcde449d992c97fd8",
+			"keccak256": "0xb5ba671f05566ac17b44bea33b4c80880c26a631996353fec6a619db9c4ed76f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://504a3dc7d0edd8621903b470f20ea64bb42177c7462cad5e0d48861466a83d61",
-				"dweb:/ipfs/QmTWiCcFdwBPJgYFVU5p1XdS1etnHrn1FzteZ5Z5TBCKzW"
+				"bzz-raw://5a3e8ca8a19ff972d1c6b35af8eb0f8f8540c0683e8d8c885e15706d3bf1f9af",
+				"dweb:/ipfs/QmUjuBD96vCFEh1tBcvvy1qyifen2U1nhdFY2xxdq4CCq6"
 			]
 		}
 	},
