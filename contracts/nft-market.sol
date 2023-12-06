@@ -74,6 +74,10 @@ contract Market {
         emit PriceChanged(seller, _tokenId, previousPrice, _price);
     }
 
+    function isListed(uint256 _tokenId) public view returns (bool) {
+        return orderOfId[_tokenId].seller != address(0);
+    }
+
     function onERC721Received(
         address operator,
         address from,
@@ -137,8 +141,11 @@ contract Market {
     function getMyNFTs() external view returns (Order[] memory) {
         uint256 length = orders.length;
         Order[] memory _orders = new Order[](length);
+        uint256 count = 0;
         for (uint256 i = 0; i < length; i++) {
-            _orders[i] = orders[i];
+            // _orders[i] = orders[i];
+            _orders[count] = orders[i];
+            count++;
         }
         return _orders;
     }

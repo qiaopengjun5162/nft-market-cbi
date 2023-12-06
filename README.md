@@ -49,6 +49,12 @@ npm install -g @remix-project/remixd
 remixd --version
 remixd -s /Users/qiaopengjun/Code/sui/nft-market-cbi --remix-ide https://remix.ethereum.org
 
+npx hardhat coverage
+npx hardhat test    
+npx hardhat export-abi --no-compile
+solhint
+npx hardhat flatten > tmp.sol  
+
 ```
 
 - <https://docs.openzeppelin.com/contracts/5.x/wizard>
